@@ -72,6 +72,11 @@ https の場合
 https://{Unique ID}.ngrok.io
 ```
 
+### 無料アカウントの注意点
+ユーザ登録していない場合や、無料アカウントで利用している場合は、3時間ほどでセッションが切れるようになっている。
+
+![](./tunnel_expired_on_ngrok.png)
+
 ## まとめ
 ngrok を使うと簡単にローカル環境を http/https で外部公開できる。
 
