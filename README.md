@@ -10,7 +10,18 @@ ngrok（エングロック）を使うと、Webhook を利用するための pub
 3. モバイルアプリのバックエンドサービスをテストできる
 4. http だけではなく https 通信が可能
 
+## ngrok でローカル開発サーバにアクセスできる仕組み
+SSH ポートフォワーディングという技術を使って、ローカル開発サーバを外部に公開する。
+
+![](./ssh-port-fowarding_with_ngrok.png)
+
 ## ngrokの使い方
+
+### 実行環境
+Windows 端末:  
+Windows 10 Home 64bit バージョン 1909（OS ビルド 18363.1082）  
+Scoop 2.2041.7
+ngrok 2.3.35
 
 ### インストール
 ```console
