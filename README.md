@@ -5,10 +5,10 @@ ngrok（エングロック）を使うと、Webhook を利用するための pub
 簡易的にセキュアな URL をローカルホストサーバーに NAT や Firewall を通して構築することが可能となる。
 
 ## ngrok のメリット
-1. デモサイトをデプロイせずに試すことが出来る
-2. 開発環境でwebhookを試す事が出来る
-3. モバイルappのバックエンドサービスをテストを出来る。
-4. httpだけではなくhttps通信可能
+1. デモサイトをデプロイせずに外部公開可能
+2. 開発環境で webhook を動作確認できる
+3. モバイルアプリのバックエンドサービスをテストできる
+4. http だけではなく https 通信が可能
 
 ## ngrokの使い方
 
@@ -53,13 +53,15 @@ GET /v2/api-docs       200
 ### アクセス
 httpの場合（例）:  
 ```
-http://1fd2ec17.ngrok.io
+http://{Unique ID}.ngrok.io
 ```
 
 https の場合
 ```
-https://1fd2ec17.ngrok.io
+https://{Unique ID}.ngrok.io
 ```
 
-まとめ
-簡単にローカル環境をhttp/httpsで外部公開できるので、webhookURLで本当にhttps受信できるのか確認したりする時に便利です。あと、デモサイトを外部に一時的に見せるときとかにも便利です。
+## まとめ
+ngrok を使うと簡単にローカル環境を http/https で外部公開できる。
+
+webhookURL で本当に https 受信できるのか確認したりする時に便利。また、デモサイトを外部に一時的に見せる時にも利用できる。
